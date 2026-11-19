@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEINS;GATE — Worldline Timeline</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png"
+        href="https://stickershop.line-scdn.net/stickershop/v1/product/4448/LINEStorePC/main.png?v=2">
+    <link rel="stylesheet" href="style-steinsgate.css">
+</head>
+
+<body>
+
+    <!-- ============================== HEADER ============================== -->
+    <header>
+        <div class="tag">—Timeline—</div>
+        <h1>STEINS;GATE</h1>
+        <div class="explain">
+            <p>Do as you please : follow EP numbering or take a look at
+                attractor fields' events.
+                Click on icons to follow time travels.
+                Consider the "ITERATION" information to get a linear view of
+                the timeline</p>
+        </div>
+    </header>
+
+    <!-- ============================== STICKY SEARCHING BAR ============================== -->
+    <nav class="legend" id="legend">
+       <a href="#wl-1" class="chip t-a">α ALPHA</a>
+       <span class="arr">→</span>
+       <a href="#wl-3" class="chip t-sg" data-target="wl-3"><i></i>χ CHI</a>
+       <span class="arr">→</span>
+       <a href="#wl-0" class="chip t-b" data-target="wl-0"><i></i>β BETA</a>
+       <span class="arr">→</span>
+       <a href="#wl-4" class="chip t-d" data-target="wl-4"><i></i>δ Delta</a>
+       <span class="arr">→</span>
+       <a href="#wl-5" class="chip t-g" data-target="wl-5"><i></i>γ Gamma</a>
+   </nav>
+    
+   <div id="divergence-search-border">
+        <nav class="divergence-search">
+            <p class="divergence-search-desc">World Line search engine</p>
+            <form id="searchForm" autocomplete="off">
+                <input type="text" id="divInput" placeholder="1.048596%" spellcheck="false" maxlength="9">
+                <button type="submit">SEARCH</button>
+                <button type="button" id="resetBtn">RESET</button>
+            </form>
+        </nav>
+    </div>
+    
+    <!-- ============================== TIMELINE ============================== -->
+    <main class="timeline" id="timeline"></main>
+    <div class="glitch-overlay" id="glitch">
+        <div class="glitch-meter"><span id="glitchNum">0.000000</span><span class="pct">%</span></div>
+        <div class="glitch-label">Reading Steiner</div>
+    </div>
+
+    <!-- ============================== GO TO THE TOP BUTTON ============================== -->
+    <button type="button" onclick="scrollToTop()" id="scroll-to-top">⬆<br>TOP</button>
+    <footer>
+        <div>Steins;Gate - a Timeline <br>- 2026 -</div>
+        <a href="../medias/Steinsgatelow-Regular.ttf" download class="upload-button">Download the font</a>
+    </footer>
+
+    <!--DATA-->
+    <script src="events.js"></script>
+
+    <!--MAIN JS-->
+    <script src="script.js"></script>
+</body>
+
+</html>
